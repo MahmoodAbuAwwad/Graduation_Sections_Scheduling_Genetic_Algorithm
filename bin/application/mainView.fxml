@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: Forestgreen;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.mainController">
+   <children>
+      <Button fx:id="readData" layoutX="115.0" layoutY="178.0" mnemonicParsing="false" onAction="#readData" onMouseEntered="#MouseShape" onMouseExited="#MouseShape1" prefHeight="56.0" prefWidth="171.0" style="-fx-background-color: White; -fx-background-radius: 5em;" text="Read Data">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="schedules" layoutX="115.0" layoutY="310.0" mnemonicParsing="false" onAction="#getSchedules" onMouseEntered="#MouseShape" onMouseExited="#MouseShape1" prefHeight="56.0" prefWidth="171.0" style="-fx-background-color: white; -fx-background-radius: 5em;" text="Schedules">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="search" layoutX="115.0" layoutY="435.0" mnemonicParsing="false" onAction="#search" onMouseEntered="#MouseShape" onMouseExited="#MouseShape1" prefHeight="56.0" prefWidth="171.0" style="-fx-background-color: white; -fx-background-radius: 5em;" text="Search">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="exit" layoutX="702.0" layoutY="530.0" mnemonicParsing="false" onAction="#exit" onMouseEntered="#MouseShape" onMouseExited="#MouseShape1" prefHeight="48.0" prefWidth="149.0" style="-fx-background-color: white; -fx-background-radius: 5em; -fx-border-color: black; -fx-border-radius: 3em; -fx-border-width: 3;" text="Exit">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      <AnchorPane layoutX="450.0" layoutY="184.0" prefHeight="251.0" prefWidth="415.0" style="-fx-background-color: White; -fx-background-radius: 15em;">
+         <children>
+            <ImageView fitHeight="142.0" fitWidth="282.0" layoutX="67.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@bzulogo.png" />
+               </image>
+            </ImageView>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </AnchorPane>
+      <Label layoutX="232.0" layoutY="40.0" prefHeight="118.0" prefWidth="436.0" text="Graduation Projects Scheduler" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
